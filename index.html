@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Donate</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div id="donatebox">
+        <div id="needed" class="br-4">
+          <div id="triangle"></div>
+          <strong>$<span id="remainingamount">167</span> still needed for this project</strong>
+        </div>
+        <div id="progressbar">
+          <div class="progress"></div>
+        </div>
+        <div id="donatecontent">
+          <p>
+            <span class="text-orange strong">Only <span id="daysleft">3</span> days left</span> to fund this project.
+          </p>
+          <p>
+            Join the <span id="donorcount">42</span> other <span id="donorstring">donors who have</span> already supported this project. Every dollar helps.
+          </p>
+          <div>
+            <div id="donater" class="two-item-group">
+              <div class="item-1">
+                <div id="dollar" class="strong">$</div>
+                <input type="number" id="amount" class="br-4" value="50" autocomplete="off">
+              </div>
+              <div class="item-2">
+                <div id="givenow" class="br-4 strong">Give Now</div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <a href="https://umanggalaiya.in" target="_blank"><i>Why give $50?</i></a>
+          </p>
+        </div>
+        <div class="two-item-group" id="actionbuttons">
+          <div class="item-1 br-4 strong color-gray" id="saveforlater">
+            Save for later
+          </div>
+          <a href="https://twitter.com/intent/tweet?text=Yay,%201%20shared!" class="item-2 br-4 strong color-gray" id="tellyourfriends" target="_blank">
+              Tell your friends
+          </a>
+        </div>
+      </div>
+      <div id="saved">
+        Saved!
+      </div>
+      <button id="clearlocalstorage" style="position: absolute; bottom: 10px;">Clear localStorage</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

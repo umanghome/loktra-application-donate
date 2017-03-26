@@ -1,0 +1,156 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: 50px auto;
+  max-width: 350px;
+  width: 90%;
+}
+
+.br-4 {
+  border-radius: 4px;
+}
+
+#needed {
+  background-color: #444444;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+}
+
+#triangle {
+  background-color: #444444;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: -7px;
+  transform: rotate(45deg);
+  right: 2%;
+  transition: 0.3s ease-in-out;
+}
+
+#progressbar, #donatecontent, #saveforlater, #tellyourfriends {
+  border: 1px solid #DBDBDB;
+}
+
+#progressbar {
+  width: 100%;
+  height: 1em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  border-bottom: none;
+}
+
+.progress {
+  background-color: #FF5135;
+  height: 100%;
+  width: 70%;
+  transition: 0.3s ease-in-out;
+}
+
+#donatecontent {
+  padding: 0 1em;
+}
+
+.two-item-group {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .two-item-group .item-1 {
+    flex-grow: 1;
+  }
+
+  .two-item-group .item-2 {
+    flex-grow: 1;
+  }
+}
+
+.two-item-group .item-1, .two-item-group .item-2 {
+  min-width: 150px;
+  width: 45%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#amount, #givenow {
+  font-size: 20px;
+  padding: 0.8em 1em;
+}
+
+#amount {
+  width: 100%;
+  border: 1px solid #DBDBDB;
+  padding-left: 2em;
+}
+
+#dollar {
+  position: absolute;
+  padding: 1.1em;
+}
+
+#givenow {
+  background-color: #00C840;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+#givenow:hover {
+  background-color: #00bc3b;
+}
+
+#saveforlater, #tellyourfriends {
+  text-align: center;
+  padding: 1em 0.5em;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.15s ease-in-out;
+}
+
+#actionbuttons div:hover {
+  background-color: #eaeced;
+}
+
+.text-orange {
+  color: #FF5135;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #009CD3;
+}
+
+.color-gray {
+  color: gray;
+}
+
+#saved {
+  width: 90%;
+  max-width: 150px;
+  color: white;
+  background-color: #444444;
+  transition: .25s ease-in-out;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5em;
+  text-align: center;
+  opacity: 0;
+}
