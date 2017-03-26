@@ -49,7 +49,7 @@ html, body {
 .progress {
   background-color: #FF5135;
   height: 100%;
-  width: 70%;
+  width: 0%;
   transition: 0.3s ease-in-out;
 }
 
